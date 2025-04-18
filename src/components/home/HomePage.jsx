@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from "react";
-// import beautiful from "../../assets/beautiful.jpg"; 
-// import beautiful2 from "../../assets/beautiful2.jpg"; 
-// import beautiful3 from "../../assets/beautiful3.jpg"; 
-// import beautiful4 from "../../assets/beautiful4.jpg"; 
 import beautiful5 from "../../assets/beautiful5.jpg"; 
 import Gallery from "../gallery/Gallery";
 import bgm2 from "../../assets/Audio/bgm2.mp3"; 
-import ColorLightEffect from "./ColorLightEffect";
-import GalleryGrid from "../gallery/GalleryGrid";
-
+import ColorLightEffect from "./ColorLightEffect"
 // Custom confetti component
 const Confetti = () => {
   const [particles, setParticles] = useState([]);
@@ -240,7 +234,7 @@ export default function HomePage() {
   const [audio] = useState(new Audio());
   
   // Set the birthday date here - format: 'YYYY-MM-DD HH:MM:SS'
-  const birthdayDate = '2025-04-18 00:00:00'; // May 18th at 12:00 PM
+  const birthdayDate = '2025-04-19 00:00:00'; // May 18th at 12:00 PM
   
   // State to check if birthday has arrived
   const [isBirthdayArrived, setIsBirthdayArrived] = useState(false);
@@ -308,7 +302,7 @@ export default function HomePage() {
   
   return (
     <>
-      {isBirthdayArrived && <><Gallery /><ColorLightEffect/></>}
+      {isBirthdayArrived && <><Gallery /> <ColorLightEffect/></>}
 
       <style>{bounceKeyframes}</style>
       <div style={{

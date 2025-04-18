@@ -35,8 +35,8 @@ const Gallery = () => {
           id: `${Date.now()}-${Math.random()}`,
           x: Math.random() * 100, // random X position
           y: -10, // start slightly above screen
-          size: Math.random() * 50 + 50, // random size
-          rotation: Math.random() * 360,
+          size: Math.random() * 50 + 40, // random size
+          rotation: Math.random() * 90,
           rotVel: (Math.random() - 0.5) * 2,
           yVel: Math.random() * 0.5 + 0.1,
           xVel: (Math.random() - 0.5) * 0.3,
