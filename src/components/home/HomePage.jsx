@@ -187,7 +187,7 @@ const BirthdayCountdown = ({ targetDate }) => {
         }}>
           {timeLeft.isExpired 
             ? "🎂 Happy Birthday My Love! 🎂" 
-            : "🎂  Countdown 🎂"}
+            : "🎂  Countdown Starts🎂"}
         </h2>
         
         {!timeLeft.isExpired && (
